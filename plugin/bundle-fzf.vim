@@ -2,6 +2,7 @@
 if exists('g:loaded_bundle_fzf')
   finish
 endif
+let g:loaded_bundle_fzf=1
 " -------------------------------------------------------------------------- }}}
 " {{{ Fuzzy file finders | https://github.com/junegunn/fzf.vim
 if has('nvim')
