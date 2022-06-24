@@ -9,7 +9,9 @@ let g:loaded_bundle_fzf=1
 " {{{ Fuzzy file finders | https://github.com/junegunn/fzf.vim
 
 " Always enable preview window on the right with 60% width
-let g:fzf_preview_window = 'right:60%'
+let g:fzf_preview="bat --color=always --style=numbers {}"
+let g:fzf_preview_window = 'right:50%'
+let g:fzf_layout = { 'window': { 'width': 0.75, 'height': 0.85, 'relative': v:true } }
 
 " [Buffers] Jump to the existing window if possible
 let g:fzf_buffers_jump = 1
